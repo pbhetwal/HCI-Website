@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>HCI - Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+/*Making clickable button space larger*/ 
+#ex{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*Styling links*/ 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/*Stlying horizontal line*/ 
+hr{
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#Overview" class="w3-bar-item w3-button w3-hover-white">Overview</a>
+    <a href="#About" class="w3-bar-item w3-button w3-hover-white">About</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://docs.google.com/document/d/16gPaglOgP8AYKmz8hw0msDV1hr6PkS5moiCGuCzQoPo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Project Plan</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://docs.google.com/document/d/1yrjgS6m-UxR1rCpxtMBSUUTdemAcJV19NxuSGyNlCzM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Design Research</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://docs.google.com/document/d/1lGeou-Q6gEJGg0FkTQGJmVbk-J59DhiPCVgQpYZAIuc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Paper Prototype</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://docs.google.com/document/d/1Smg9zJSSLBZkw3Mx_r-eWuZar9S83OYSF3q23CQdcHM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Usability Testing & Heuristic Evaluation</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://docs.google.com/document/d/1fcCKtmrbBecGzUSZAUHzW9MvowdkNui8GiZyG5Qt4q4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Final Prototype & Storyboard</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/pbhetwal/HCI-Website" target="_blank" rel="noopener noreferrer">Code for Website</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64" id = "Overview">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Overview</h1>
+      <p>
+      	<h4 style = "text-align: center" class="w3-text-teal"> Name of our project: </h4>
+      	<h6 style = "text-align: center"> Reducing Anxiety </h6>
+      	<h4 style = "text-align: center" class="w3-text-teal"> Names and contact info for team members:  </h4> 
+      	<h6 style = "text-align: center"> Parikshit Bhetwal - pabh0959@colorado.edu</h6>
+      	<h6 style = "text-align: center"> Dennis Lim - deli4631@colorado.edu</h6>
+      	<h6 style = "text-align: center"> John Mulligan - jomu9218@colorado.edu</h6>
+
+      	<hr> 
+      	The links to the milestones that allowed our project to be completed are on the left side of this page, or in the drop down menu if you are on a mobile phone. 
+      	The link to our final prototype and our project video is on the right side of this page. 
+      	<br> <br> 
+      	This project is focused on bettering the lives of students who experience anxiety. Our research showed us that time management and losing sleep 
+      	were serious problems that students have and our design for this project focuses heavily on helping with this problem. Furthermore,
+      	our group used Figma to create the prototypes for this project. Figma allowed us to prototype our application wihout writing code. 
+      	<br> <br> 
+      	<h3> Step 1 </h3> 
+      	The first step in this project was to formulate an idea for a project. This step was done alone without the help of a group. 
+      	<br> <br> 
+      	<h3> Step 2 </h3>
+      	Then, our class bid on which project we wanted to take part in. Thus, all the group members that worked on this project 
+      	were interested in bettering the lives of anxious students. 
+      	<h3> Step 3 </h3>
+        Next, our group formulated a project plan that described what our project would be and how we would go about completing it. 
+      	<br> <br> 
+      	<h3> Step 4 </h3>
+      	After, our group carried out design research. This involved interviewing possible users and sending out questionnaires to 
+      	determine how to structure our design. 
+      	<br> <br> 
+      	<h3> Step 5 </h3>
+      	This step involved creating a paper prototype. Afterwards, our group converted this prototype into one that could be 
+      	interacted with on Figma. 
+      	<br> <br> 
+      	<h3> Step 6 </h3>
+      	This step involved usability testing with students that may possibly use our application. Then, we carried out 
+      	heuristic evaluation using UARs. 
+      	<br> <br> 
+      	<h3> Step 7 </h3>
+      	This step involved polishing our previous prototypes into a final prototype that built upon the usability issues we had encountered. 
+      	Then, we created a storyboard that we would follow to later create a video demonstrating our application. 
+      	<br> <br> 
+      	<h3> Step 8 </h3>
+      	This was the final step of our project. This step involved creating a video that showcased our complete prototype and creating
+      	the website that you are currently on. 
+      </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center w3-hover-teal w3-text-teal">
+      		<a href = "https://www.figma.com/file/JiEwOYYn5jeSGxRecvctrhvK/Final-Prototype?node-id=0%3A1" id = "ex" target="_blank" rel="noopener noreferrer"> Final Prototype </a>
+	  </p>
+	  <p class="w3-border w3-padding-large w3-padding-32 w3-center w3-hover-teal w3-text-teal"">
+      		<a href = "" id = "ex" target="_blank" rel="noopener noreferrer"> Project Video </a>
+	  </p>
+    </div>
+
+
+  <div class="w3-row w3-padding-64" id = "About">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">About</h1>
+      <p>
+      	This portfolio was made possible due to a Human-Centered Computing course at University of Colorado Boulder. 
+      </p>
+    </div>
+    <div class="w3-third w3-container"> 
+      	<p class = "w3-border w3-padding-large w3-padding-32 w3-center w3-hover-teal w3-text-teal" >
+      		<a href = "https://www.colorado.edu" id = "ex" target="_blank" rel="noopener noreferrer"> CU Boulder </a>
+		</p>
+       
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#Overview">1</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4 style = "text-align: center"> By Parikshit Bhetwal, Dennis Lim, and John Mulligan</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1" style = "text-align: center">
+     	Structured by W3.CSS Template 
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
