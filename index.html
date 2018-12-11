@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- WEBSITE NAME IN TAB --> 
 <title>HCI Project Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Get styling templates --> 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -52,7 +54,7 @@ hr{
 </style>
 <body>
 
-<!-- Navbar -->
+<!-- The navigation bar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
@@ -61,7 +63,7 @@ hr{
   </div>
 </div>
 
-<!-- Sidebar -->
+<!-- The side bar itself -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
     <i class="fa fa-remove"></i>
@@ -75,16 +77,17 @@ hr{
   <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/pbhetwal/HCI-Website" target="_blank" rel="noopener noreferrer">Code for Website</a>
 </nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
+<!-- Overlay for smaller screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<!-- Main content is here -->
 <div class="w3-main" style="margin-left:250px">
 
   <div class="w3-row w3-padding-64" id = "Overview">
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Overview</h1>
       <p>
+        <!--Introductory information required for project --> 
       	<h4 style = "text-align: center" class="w3-text-teal"> Name of our project: </h4>
       	<h6 style = "text-align: center"> Anxiety Manager </h6>
       	<h4 style = "text-align: center" class="w3-text-teal"> Names and contact info for team members:  </h4> 
@@ -92,6 +95,7 @@ hr{
       	<h6 style = "text-align: center"> Dennis Lim - deli4631@colorado.edu</h6>
       	<h6 style = "text-align: center"> John Mulligan - jomu9218@colorado.edu</h6>
 
+        <!-- Help and documentation --> 
       	<hr> 
       	The links to the milestones that allowed our project to be completed are on the left side of this page, or in the drop down menu if you are on a mobile phone. 
       	The link to our final prototype and our project video is on the right side of this page or at the bottom of this overview if you are on a mobile device. 
@@ -100,6 +104,7 @@ hr{
       	were serious problems that students have and our design for this project focuses heavily on helping with this problem. Furthermore,
       	our group used Figma to create the prototypes for this project. Figma allowed us to prototype our application without writing code. 
       	<br> <br> 
+        <!-- Steps in this project --> 
       	<h3> Step 1 </h3> 
       	The first step in this project was to formulate an idea for a project. This step was done alone without the help of a group. 
       	<br> <br> 
@@ -132,9 +137,11 @@ hr{
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-large w3-padding-32 w3-center w3-hover-teal w3-text-teal">
+        <!--FINAL PROTOTYPE LINK --> 
       		<a href = "https://www.figma.com/file/JiEwOYYn5jeSGxRecvctrhvK/Final-Prototype?node-id=0%3A1" id = "ex" target="_blank" rel="noopener noreferrer"> Final Prototype </a>
 	  </p>
 	  <p class="w3-border w3-padding-large w3-padding-32 w3-center w3-hover-teal w3-text-teal"">
+        <!--FINAL VIDEO LINK --> 
       		<a href = "https://drive.google.com/file/d/1V2iVIzS1F84BQ73HZQwxamu65BsQn8HV/view?usp=sharing" id = "ex" target="_blank" rel="noopener noreferrer"> Project Video </a>
 	  </p>
     </div>
@@ -144,18 +151,20 @@ hr{
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal" id = "About">About</h1>
       <p>
+        <!-- Thanks to course and university --> 
       	This portfolio was made possible due to a Human-Centered Computing course at University of Colorado Boulder. 
       </p>
     </div>
     <div class="w3-third w3-container"> 
       	<p class = "w3-border w3-padding-large w3-padding-32 w3-center w3-hover-teal w3-text-teal" >
+          <!-- LINK TO CU BOULDER --> 
       		<a href = "https://www.colorado.edu" id = "ex" target="_blank" rel="noopener noreferrer"> CU Boulder </a>
 		</p>
        
     </div>
   </div>
 
-  <!-- Pagination -->
+  <!-- Pages: only one here but included just for clarity  -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
       <a class="w3-button w3-black" href="#Overview">1</a>
@@ -164,25 +173,27 @@ hr{
 
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
+      <!-- Summary of authors --> 
       <h4 style = "text-align: center"> By Parikshit Bhetwal, Dennis Lim, and John Mulligan</h4>
     </div>
 
     <div class="w3-container w3-theme-l1" style = "text-align: center">
+      <!-- Thanks to template for over-arching design --> 
      	Structured by W3.CSS Template 
     </div>
   </footer>
 
-<!-- END MAIN -->
+<!-- end main content -->
 </div>
 
 <script>
-// Get the Sidebar
+// Get sidebar
 var mySidebar = document.getElementById("mySidebar");
 
-// Get the DIV with overlay effect
+// DIV with overlay effect 
 var overlayBg = document.getElementById("myOverlay");
 
-// Toggle between showing and hiding the sidebar, and add overlay effect
+// Showing and hiding side bar
 function w3_open() {
     if (mySidebar.style.display === 'block') {
         mySidebar.style.display = 'none';
@@ -193,7 +204,7 @@ function w3_open() {
     }
 }
 
-// Close the sidebar with the close button
+// Close the sidebar 
 function w3_close() {
     mySidebar.style.display = "none";
     overlayBg.style.display = "none";
